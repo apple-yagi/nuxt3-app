@@ -13,7 +13,7 @@ const { data: pokemonsResponse } = await useFetch("/api/pokemons");
   </main>
 </template>
 
-<style>
+<style scoped>
 .main {
   max-width: 960px;
   min-height: calc(100vh - 100px);
