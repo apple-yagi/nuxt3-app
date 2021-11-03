@@ -1,11 +1,22 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "nuxt dev",
-    "build": "nuxt build",
-    "start": "node .output/server/index.mjs"
-  },
-  "devDependencies": {
-    "nuxt3": "latest"
-  }
+	"private": true,
+	"scripts": {
+		"dev": "nuxt dev",
+		"build": "nuxt build",
+		"start": "node .output/server/index.mjs",
+		"lint": "eslint . --ext .js,.ts,.vue",
+		"format": "prettier --write .",
+		"prepare": "git config --local core.hooksPath .githooks"
+	},
+	"devDependencies": {
+		"@babel/eslint-parser": "^7.16.0",
+		"@nuxtjs/eslint-config-typescript": "^7.0.2",
+		"eslint": "^8.1.0",
+		"eslint-config-prettier": "^8.3.0",
+		"lint-staged": "^11.2.6",
+		"nuxt3": "latest",
+		"prettier": "^2.4.1",
+		"sass": "^1.43.4",
+		"typescript": "^4.4.4"
+	}
 }
