@@ -1,15 +1,3 @@
-export type PokemonsResponse = {
-  results: Pokemon[];
-  paging: {
-    page: number;
-    count: number;
-    perPage: number;
-    prevPage: number;
-    nextPage: number;
-    pageCount: number;
-  }
-}
-
 export type Pokemon = {
   no: string;
   sub: number;
@@ -22,5 +10,17 @@ export type Pokemon = {
   kyodai_flg: number;
   image_m: string;
   image_s: string;
-  zukan_no: string
-}
+  zukan_no: string;
+};
+
+export type PokemonsResponse = {
+  results: Pokemon[];
+  paging: {
+    page: number;
+    count: number;
+    perPage: number;
+    prevPage: number;
+    nextPage: number;
+    pageCount: number;
+  };
+};
